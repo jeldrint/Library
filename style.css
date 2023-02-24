@@ -62,12 +62,10 @@ button:active{
 
 
 /* BOOK LIST TABLE */
-.table{
-
-}
-
-.table-header{
+.book-list{
     border: solid 1px aliceblue;
+    padding: 10px 5px;
+    width: 500px;
 }
 
 

@@ -2,31 +2,31 @@ let myLibrary = [ {
     title: "The Chronicles Of Narnia",
     author: "C.S. Lewis",
     pages: "848 pages",
-    haveRead: "read"
+    haveRead: 'read'
 },
 {
     title: "Don Quixote",
     author: "Miguel De Cervantes",
     pages: "566 pages",
-    haveRead: "not yet read"
+    haveRead: 'not yet read'
 },
 {
     title: "A Tale of Two Cities",
     author: "Charles Dickens",
     pages: "859 pages",
-    haveRead: "not yet read"
+    haveRead: 'not yet read'
 },
 {
     title: "The Little Prince (Le Petit Prince)",
     author: "Antoine de Saint-Exupery",
     pages: "643 pages",
-    haveRead: "not yet read"
+    haveRead: 'not yet read'
 },
 {
     title: "The Hobbit",
     author: "J.R.R. Tolkien",
     pages: "463 pages",
-    haveRead: "not yet read"
+    haveRead: 'not yet read'
 },
 ];
 
@@ -37,7 +37,7 @@ let addBook = document.querySelector('#add-book');
 let removeBook = document.querySelector('#remove-book');
 
 let readStatus = document.getElementById('read-status');
-let bookList = document.querySelector('.table-body');
+let bookList = document.querySelector('.book-list');
 
 
 function Book(title,author,pages, haveRead){
@@ -54,10 +54,10 @@ function addBookToLibrary(book){
     book.pages = document.getElementById('num-pages').value;
 
     if (readStatus.checked){
-        book.haveRead = "read"
+        book.haveRead = 'read'
     }
     else{
-        book.haveRead = "not yet read"
+        book.haveRead = 'not yet read'
     }
     myLibrary.push(book);
 }
